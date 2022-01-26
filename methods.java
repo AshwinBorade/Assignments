@@ -1,4 +1,5 @@
 package calculator;
+import java.util.Scanner;
 
 public class methods {
 	public void display() {
@@ -25,7 +26,16 @@ public class methods {
     
     int result =he.add(4,5);
     System.out.println("result is "+ result);
-    System.out.println(he.valid(18));
+    Scanner sc =new Scanner(System.in);
+    System.out.println("Enter the age");
+    int input=sc.nextInt();
+    if(he.valid(input)) {
+    	System.out.println("valid for vote");
+    	
+    }
+    else {
+    	System.out.println("not valid for vote");
+    }
     System.out.println("fullname is "+ he.fullname("ashwin","borade"));  
  }
 }
